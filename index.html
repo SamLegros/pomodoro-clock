@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="audio" loop>
+        <source src="http://www.orangefreesounds.com/wp-content/uploads/2016/10/Elevator-music.mp3?_=1" type="audio/mpeg"/>
+    </audio>
+
+    <div class="container">
+        <h3>Pomodoro Clock<sup class="myHelp"> <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">?</a></sup></h3>
+        <div class="row">
+            <div class="col-xs-3">
+                <p class="speaker">---<br>-----<br>-----<br>---</p>
+            </div>
+            <div class="col-xs-6 mainDisplay">
+                <p id="timerDisplay"></p>
+                <p id="statusDisplay"></p>
+            </div>
+            <div class="col-xs-3">
+                <p class="speaker">---<br>-----<br>-----<br>---</p>
+            </div>
+        </div><!-- end of row div  -->
+        <div class="row myOptions">
+            <div class="col-xs-4">
+                <p class="myOptionsTitle">Session Length<br><span class="myChoice"><span id="sessionLess">-</span>&nbsp;&nbsp;<span class="myChoiceInt" id="sessionInt"></span>&nbsp;&nbsp;<span id="sessionMore">+</span></span></p>
+            </div>
+            <div class="col-xs-4">
+                <p class="startStop" id="startButton">Start</p>
+                <p class="reset" id="resetButton">reset</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="myOptionsTitle">Break Length<br><span class="myChoice"><span id="breakLess">-</span>&nbsp;&nbsp;<span class="myChoiceInt" id="breakInt"></span>&nbsp;&nbsp;<span id="breakMore">+</span></span></p>
+            </div>
+        </div>
+    </div><!-- end of container div  -->
+
+    <p class="myFooter"><i class="fa fa-code" aria-hidden="true" style="font-size: 20px;"></i> by <a href="https://www.linkedin.com/in/samlegros/" target="_blank">Sam Legros</a></p>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="scripts/script.js"></script>
+</html>
